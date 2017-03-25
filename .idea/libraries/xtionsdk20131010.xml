@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xtionsdk20131010">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/xtionsdk20131010.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="orbbecPermission20150825-noCheck">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/orbbecPermission20150825-noCheck.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

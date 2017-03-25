@@ -1,0 +1,473 @@
+com.orbbec.SkeletonViewer.MainActivity -> com.orbbec.SkeletonViewer.MainActivity:
+    java.lang.String TAG -> a
+    com.orbbec.astrakernel.AstraContext mContext -> b
+    com.orbbec.astrakernel.DepthData mDepthData -> c
+    com.orbbec.astrastartlibs.UserTracker mUserTracker -> d
+    java.lang.String mUserInfo -> e
+    android.widget.TextView mInfoTxt -> f
+    android.graphics.Bitmap mUserBitmap -> g
+    int[] mPixels -> h
+    java.lang.String mCalibPose -> i
+    boolean mExit -> j
+    int mWidth -> k
+    int mHeight -> l
+    com.orbbec.astrakernel.PermissionCallbacks m_callbacks -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+com.orbbec.SkeletonViewer.MainActivity$1 -> com.orbbec.SkeletonViewer.a:
+    com.orbbec.SkeletonViewer.MainActivity this$0 -> a
+    void onDevicePermissionGranted() -> a
+    void onDevicePermissionDenied() -> b
+com.orbbec.SkeletonViewer.MainActivity$AstraView -> com.orbbec.SkeletonViewer.b:
+    android.view.SurfaceHolder m_holder -> d
+    java.lang.Thread m_thread -> e
+    android.graphics.Canvas m_canvas -> f
+    android.graphics.Paint m_paint -> g
+    android.graphics.Paint m_pointPaint -> h
+    int[] userColor -> i
+    int[] skeletonColor -> j
+    java.util.List skeletonPathList -> k
+    java.util.List pointPathList -> l
+    int ratioX -> a
+    float ratioY -> b
+    com.orbbec.SkeletonViewer.MainActivity this$0 -> c
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void run() -> run
+com.orbbec.SkeletonViewer.MainActivity$CalibrationCompleteObserver -> com.orbbec.SkeletonViewer.c:
+    com.orbbec.SkeletonViewer.MainActivity this$0 -> a
+com.orbbec.SkeletonViewer.MainActivity$NewUserObserver -> com.orbbec.SkeletonViewer.d:
+    com.orbbec.SkeletonViewer.MainActivity this$0 -> a
+com.orbbec.SkeletonViewer.MainActivity$PoseDetectedObserver -> com.orbbec.SkeletonViewer.e:
+    com.orbbec.SkeletonViewer.MainActivity this$0 -> a
+com.orbbec.astrakernel.AstraContext -> com.orbbec.a.a:
+    java.lang.String TAG -> e
+    org.openni.Context m_opennicontext -> a
+    org.openni.OutArg m_scriptNode -> f
+    android.content.Context m_context -> g
+    boolean mDevicePermissionPending -> h
+    org.openni.android.OpenNIHelper mOpenNIHelper -> i
+    android.hardware.usb.UsbDeviceConnection mDeviceConnection -> j
+    com.orbbec.astrakernel.PermissionCallbacks m_callbacks -> k
+    android.app.AlertDialog dialog -> l
+    java.util.HashMap deviceList -> b
+    boolean noDev -> c
+    com.orbbec.astrakernel.AstraContext astra -> d
+    void myDialog(android.content.Context) -> a
+    void start() -> a
+    java.lang.String getXmlFilePath(android.content.Context) -> b
+    void myInitFunction() -> b
+    void onDevicePermissionGranted(android.hardware.usb.UsbDevice) -> a
+    void waitforupdate() -> c
+    void Close() -> d
+    void onDevicePermissionDenied(android.hardware.usb.UsbDevice) -> b
+    org.openni.android.OpenNIHelper access$0(com.orbbec.astrakernel.AstraContext) -> a
+    void access$1(com.orbbec.astrakernel.AstraContext,boolean) -> a
+com.orbbec.astrakernel.AstraContext$1 -> com.orbbec.a.b:
+    com.orbbec.astrakernel.AstraContext this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.orbbec.astrakernel.DepthData -> com.orbbec.a.c:
+    org.openni.DepthGenerator m_depthGen -> a
+    org.openni.DepthMap GetDepthMap() -> a
+    org.openni.Point3D convertRealWorldToProjective(org.openni.Point3D) -> a
+com.orbbec.astrakernel.PermissionCallbacks -> com.orbbec.a.d:
+    void onDevicePermissionGranted() -> a
+    void onDevicePermissionDenied() -> b
+com.orbbec.astrastartlibs.UserTracker -> com.orbbec.b.a:
+    org.openni.UserGenerator m_userGen -> b
+    org.openni.SkeletonCapability m_skeletonCap -> a
+    org.openni.PoseDetectionCapability m_poseDetectionCap -> c
+    java.lang.String m_calibPose -> d
+    void addUserDetectObserver(org.openni.IObserver) -> a
+    void addPositionObserver(org.openni.IObserver) -> b
+    void addCalibrationObserver(org.openni.IObserver) -> c
+    int[] GetUsers() -> a
+    java.nio.ShortBuffer getUserLabel(int) -> a
+    java.lang.String getSkeletonCalibrationPose() -> b
+    boolean isSkeletonTracking(int) -> b
+    org.openni.Point3D GetJointPos(int,org.openni.SkeletonJoint) -> a
+    void Close() -> c
+org.openni.AudioGenerator -> org.openni.a:
+    org.openni.StateChangedObservable waveOutputModeChanged -> a
+org.openni.AudioGenerator$1 -> org.openni.b:
+    org.openni.AudioGenerator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.CapabilityBase -> org.openni.c:
+    org.openni.ProductionNode node -> a
+org.openni.Codec -> org.openni.d:
+org.openni.Context -> org.openni.e:
+    org.openni.Observable errorStateChangedEvent -> a
+    org.openni.Observable nodeCreatedEvent -> b
+    org.openni.Observable nodeDestroyedEvent -> c
+    java.util.Hashtable allNodes -> d
+    java.util.Hashtable allContexts -> e
+    org.openni.Context createFromXmlFile(java.lang.String,org.openni.OutArg) -> a
+    void startGeneratingAll() -> a
+    void waitAnyUpdateAll() -> b
+    void freeObject(long) -> a
+    long init() -> c
+    long initFromXmlEx(java.lang.String,org.openni.OutArg) -> b
+    org.openni.ProductionNode createProductionNodeObject(long,org.openni.NodeType) -> a
+org.openni.Context$1 -> org.openni.f:
+    org.openni.Context this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.Context$2 -> org.openni.g:
+    org.openni.Context this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.Context$3 -> org.openni.h:
+    org.openni.Context this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.DepthGenerator -> org.openni.i:
+    org.openni.StateChangedObservable fovChanged -> a
+    org.openni.DepthGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors) -> a
+    org.openni.DepthGenerator create(org.openni.Context) -> a
+    org.openni.Point3D[] convertRealWorldToProjective(org.openni.Point3D[]) -> a
+    org.openni.Point3D convertRealWorldToProjective(org.openni.Point3D) -> a
+    void getMetaData(org.openni.DepthMetaData) -> a
+    org.openni.DepthMetaData getMetaData() -> a
+org.openni.DepthGenerator$1 -> org.openni.j:
+    org.openni.DepthGenerator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.DepthMap -> org.openni.k:
+org.openni.DepthMetaData -> org.openni.l:
+    org.openni.DepthMap getData() -> a
+    org.openni.Map getData() -> b
+org.openni.Device -> org.openni.m:
+    org.openni.Device create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors) -> a
+    org.openni.Device create(org.openni.Context) -> a
+    org.openni.DeviceIdentificationCapability getDeviceIdentificationCapability() -> a
+org.openni.DeviceIdentificationCapability -> org.openni.n:
+    java.lang.String getDeviceName() -> a
+    java.lang.String getVendorSpecificData() -> b
+org.openni.EnumerationErrors -> org.openni.o:
+    java.lang.String toString() -> toString
+    void freeObject(long) -> a
+org.openni.GeneralException -> org.openni.p:
+org.openni.Generator -> org.openni.q:
+    org.openni.StateChangedObservable generationRunningChanged -> a
+    org.openni.StateChangedObservable newDataAvailable -> b
+org.openni.Generator$1 -> org.openni.r:
+    org.openni.Generator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.Generator$2 -> org.openni.s:
+    org.openni.Generator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.GestureGenerator -> org.openni.t:
+    org.openni.Observable gestureRecognizedEvent -> a
+    org.openni.Observable gestureProgressEvent -> b
+    org.openni.Observable gestureIntermediateStageCompletedEvent -> c
+    org.openni.Observable gestureReadyForNextIntermediateStageEvent -> d
+    org.openni.StateChangedObservable gestureChangedEvent -> e
+org.openni.GestureGenerator$1 -> org.openni.u:
+    org.openni.GestureGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.GestureGenerator$2 -> org.openni.v:
+    org.openni.GestureGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.GestureGenerator$3 -> org.openni.w:
+    org.openni.GestureGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.GestureGenerator$4 -> org.openni.x:
+    org.openni.GestureGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.GestureGenerator$5 -> org.openni.y:
+    org.openni.GestureGenerator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.HandsGenerator -> org.openni.z:
+    org.openni.Observable handCreateEvent -> a
+    org.openni.Observable handUpdateEvent -> b
+    org.openni.Observable handDestroyEvent -> c
+org.openni.HandsGenerator$1 -> org.openni.aa:
+    org.openni.HandsGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.HandsGenerator$2 -> org.openni.ab:
+    org.openni.HandsGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.HandsGenerator$3 -> org.openni.ac:
+    org.openni.HandsGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.IObservable -> org.openni.ad:
+    void addObserver(org.openni.IObserver) -> a
+org.openni.IObserver -> org.openni.ae:
+org.openni.IRGenerator -> org.openni.af:
+org.openni.IStateChangedObservable -> org.openni.ag:
+org.openni.ImageGenerator -> org.openni.ah:
+    org.openni.StateChangedObservable pixelFormatChanged -> a
+org.openni.ImageGenerator$1 -> org.openni.ai:
+    org.openni.ImageGenerator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.Map -> org.openni.aj:
+    long ptr -> a
+    int xRes -> b
+    int yRes -> c
+    int bytesPerPixel -> d
+    java.nio.ByteBuffer createByteBuffer() -> a
+    int getXRes() -> b
+    int getYRes() -> c
+    void setBytesPerPixel(int) -> a
+org.openni.MapGenerator -> org.openni.ak:
+    org.openni.StateChangedObservable mapOutputModeChanged -> a
+org.openni.MapGenerator$1 -> org.openni.al:
+    org.openni.MapGenerator this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.MapMetaData -> org.openni.am:
+    org.openni.PixelFormat pixelFormat -> a
+    org.openni.Map map -> b
+    org.openni.Map getData() -> b
+org.openni.NativeMethods -> org.openni.NativeMethods:
+    void copyToBuffer(java.nio.ByteBuffer,long,int) -> copyToBuffer
+    java.lang.String xnGetStatusString(int) -> xnGetStatusString
+    int xnInit(org.openni.OutArg) -> xnInit
+    int xnInitFromXmlFileEx(java.lang.String,org.openni.OutArg,long,org.openni.OutArg) -> xnInitFromXmlFileEx
+    int xnContextAddRef(long) -> xnContextAddRef
+    void xnContextRelease(long) -> xnContextRelease
+    int xnWaitAnyUpdateAll(long) -> xnWaitAnyUpdateAll
+    int xnStartGeneratingAll(long) -> xnStartGeneratingAll
+    int xnRegisterToGlobalErrorStateChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToGlobalErrorStateChange
+    int xnRegisterToNodeCreation(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToNodeCreation
+    int xnRegisterToNodeDestruction(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToNodeDestruction
+    void xnEnumerationErrorsFree(long) -> xnEnumerationErrorsFree
+    int xnEnumerationErrorsToString(long,org.openni.OutArg) -> xnEnumerationErrorsToString
+    void xnNodeQueryFree(long) -> xnNodeQueryFree
+    int xnProductionNodeAddRef(long) -> xnProductionNodeAddRef
+    void xnProductionNodeRelease(long) -> xnProductionNodeRelease
+    int xnCreateDevice(long,org.openni.OutArg,long,long) -> xnCreateDevice
+    int xnGetDeviceName(long,org.openni.OutArg) -> xnGetDeviceName
+    int xnGetVendorSpecificData(long,org.openni.OutArg) -> xnGetVendorSpecificData
+    int xnRegisterToGenerationRunningChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToGenerationRunningChange
+    int xnRegisterToNewDataAvailable(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToNewDataAvailable
+    int xnRegisterToMapOutputModeChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToMapOutputModeChange
+    int xnCreateDepthGenerator(long,org.openni.OutArg,long,long) -> xnCreateDepthGenerator
+    int xnRegisterToDepthFieldOfViewChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToDepthFieldOfViewChange
+    int xnConvertRealWorldToProjective(long,org.openni.Point3D[],org.openni.Point3D[]) -> xnConvertRealWorldToProjective
+    void xnGetDepthMetaData(long,org.openni.DepthMetaData) -> xnGetDepthMetaData
+    int xnRegisterToPixelFormatChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToPixelFormatChange
+    int xnRegisterGestureCallbacks(long,java.lang.Object,java.lang.String,java.lang.String,org.openni.OutArg) -> xnRegisterGestureCallbacks
+    int xnRegisterToGestureChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToGestureChange
+    int xnRegisterToGestureIntermediateStageCompleted(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToGestureIntermediateStageCompleted
+    int xnRegisterToGestureReadyForNextIntermediateStage(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToGestureReadyForNextIntermediateStage
+    int xnCreateUserGenerator(long,org.openni.OutArg,long,long) -> xnCreateUserGenerator
+    int xnGetUsers(long,org.openni.OutArg) -> xnGetUsers
+    int xnGetUserPixels(long,int,org.openni.SceneMetaData) -> xnGetUserPixels
+    int xnRegisterUserCallbacks(long,java.lang.Object,java.lang.String,java.lang.String,org.openni.OutArg) -> xnRegisterUserCallbacks
+    int xnRegisterToUserExit(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToUserExit
+    int xnRegisterToUserReEnter(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToUserReEnter
+    int xnSetSkeletonProfile(long,int) -> xnSetSkeletonProfile
+    int xnRegisterToJointConfigurationChange(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToJointConfigurationChange
+    int xnGetSkeletonJointPosition(long,int,int,org.openni.OutArg) -> xnGetSkeletonJointPosition
+    boolean xnIsSkeletonTracking(long,int) -> xnIsSkeletonTracking
+    int xnGetSkeletonCalibrationPose(long,org.openni.OutArg) -> xnGetSkeletonCalibrationPose
+    int xnRegisterToCalibrationStart(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToCalibrationStart
+    int xnRegisterToCalibrationInProgress(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToCalibrationInProgress
+    int xnRegisterToCalibrationComplete(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToCalibrationComplete
+    int xnRegisterToPoseDetected(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToPoseDetected
+    int xnRegisterToOutOfPose(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToOutOfPose
+    int xnRegisterToPoseDetectionInProgress(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToPoseDetectionInProgress
+    int xnRegisterHandCallbacks(long,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,org.openni.OutArg) -> xnRegisterHandCallbacks
+    int xnRegisterToWaveOutputModeChanges(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToWaveOutputModeChanges
+    int xnRegisterToEndOfFileReached(long,java.lang.Object,java.lang.String,org.openni.OutArg) -> xnRegisterToEndOfFileReached
+    java.lang.String xnProductionNodeTypeToString(int) -> xnProductionNodeTypeToString
+org.openni.NodeType -> org.openni.an:
+    org.openni.NodeType INVALID -> a
+    org.openni.NodeType DEVICE -> b
+    org.openni.NodeType DEPTH -> c
+    org.openni.NodeType IMAGE -> d
+    org.openni.NodeType AUDIO -> e
+    org.openni.NodeType IR -> f
+    org.openni.NodeType USER -> g
+    org.openni.NodeType RECORDER -> h
+    org.openni.NodeType PLAYER -> i
+    org.openni.NodeType GESTURE -> j
+    org.openni.NodeType SCENE -> k
+    org.openni.NodeType HANDS -> l
+    org.openni.NodeType CODEC -> m
+    org.openni.NodeType PRODUCTION_NODE -> n
+    org.openni.NodeType GENERATOR -> o
+    org.openni.NodeType MAP_GENERATOR -> p
+    org.openni.NodeType SCRIPT_NODE -> q
+    int val -> r
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    int toNative() -> a
+    java.lang.String toString() -> toString
+org.openni.NodeWrapper -> org.openni.ao:
+    org.openni.Context context -> a
+    org.openni.Context getContext() -> c
+    void freeObject(long) -> a
+org.openni.ObjectWrapper -> org.openni.ap:
+    long ptr -> a
+    long toNative() -> d
+    void finalize() -> finalize
+    void dispose() -> e
+    void freeObject(long) -> a
+org.openni.Observable -> org.openni.aq:
+    java.util.ArrayList observers -> a
+    long hCallback -> b
+    void addObserver(org.openni.IObserver) -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.OutArg -> org.openni.ar:
+    java.lang.Object value -> a
+org.openni.OutputMetaData -> org.openni.as:
+org.openni.PixelFormat -> org.openni.at:
+    org.openni.PixelFormat RGB24 -> a
+    org.openni.PixelFormat YUV422 -> b
+    org.openni.PixelFormat GRAYSCALE_8BIT -> c
+    org.openni.PixelFormat GRAYSCALE_16BIT -> d
+    int val -> e
+    org.openni.PixelFormat[] ENUM$VALUES -> f
+    org.openni.PixelFormat[] values() -> values
+    org.openni.PixelFormat valueOf(java.lang.String) -> valueOf
+org.openni.Player -> org.openni.au:
+    org.openni.StateChangedObservable eofReached -> a
+org.openni.Player$1 -> org.openni.av:
+    org.openni.Player this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.Point3D -> org.openni.aw:
+    float X -> a
+    float Y -> b
+    float Z -> c
+    float getX() -> a
+    float getY() -> b
+org.openni.PoseDetectionCapability -> org.openni.ax:
+    org.openni.Observable poseDetectedEvent -> a
+    org.openni.Observable outOfPoseEvent -> b
+    org.openni.Observable poseDetectionInProgressEvent -> c
+    org.openni.IObservable getPoseDetectedEvent() -> a
+org.openni.PoseDetectionCapability$1 -> org.openni.ay:
+    org.openni.PoseDetectionCapability this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.PoseDetectionCapability$2 -> org.openni.az:
+    org.openni.PoseDetectionCapability this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.PoseDetectionCapability$3 -> org.openni.ba:
+    org.openni.PoseDetectionCapability this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.ProductionNode -> org.openni.bb:
+org.openni.Query -> org.openni.bc:
+    void freeObject(long) -> a
+org.openni.Recorder -> org.openni.bd:
+org.openni.SceneAnalyzer -> org.openni.be:
+org.openni.SceneMap -> org.openni.bf:
+org.openni.SceneMetaData -> org.openni.bg:
+    org.openni.SceneMap getData() -> a
+    org.openni.Map getData() -> b
+org.openni.ScriptNode -> org.openni.bh:
+org.openni.ShortMap -> org.openni.bi:
+    java.nio.ShortBuffer createShortBuffer() -> d
+org.openni.SkeletonCapability -> org.openni.bj:
+    org.openni.StateChangedObservable jointConfigurationChangeEvent -> a
+    org.openni.Observable calibrationStartEvent -> b
+    org.openni.Observable calibrationInProgressEvent -> c
+    org.openni.Observable calibrationCompleteEvent -> d
+    void setSkeletonProfile(org.openni.SkeletonProfile) -> a
+    org.openni.SkeletonJointPosition getSkeletonJointPosition(int,org.openni.SkeletonJoint) -> a
+    boolean isSkeletonTracking(int) -> a
+    java.lang.String getSkeletonCalibrationPose() -> a
+    org.openni.IObservable getCalibrationCompleteEvent() -> b
+org.openni.SkeletonCapability$1 -> org.openni.bk:
+    org.openni.SkeletonCapability this$0 -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.SkeletonCapability$2 -> org.openni.bl:
+    org.openni.SkeletonCapability this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.SkeletonCapability$3 -> org.openni.bm:
+    org.openni.SkeletonCapability this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.SkeletonCapability$4 -> org.openni.bn:
+    org.openni.SkeletonCapability this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.SkeletonJoint -> org.openni.bo:
+    org.openni.SkeletonJoint HEAD -> a
+    org.openni.SkeletonJoint NECK -> b
+    org.openni.SkeletonJoint TORSO -> c
+    org.openni.SkeletonJoint WAIST -> d
+    org.openni.SkeletonJoint LEFT_COLLAR -> e
+    org.openni.SkeletonJoint LEFT_SHOULDER -> f
+    org.openni.SkeletonJoint LEFT_ELBOW -> g
+    org.openni.SkeletonJoint LEFT_WRIST -> h
+    org.openni.SkeletonJoint LEFT_HAND -> i
+    org.openni.SkeletonJoint LEFT_FINGER_TIP -> j
+    org.openni.SkeletonJoint RIGHT_COLLAR -> k
+    org.openni.SkeletonJoint RIGHT_SHOULDER -> l
+    org.openni.SkeletonJoint RIGHT_ELBOW -> m
+    org.openni.SkeletonJoint RIGHT_WRIST -> n
+    org.openni.SkeletonJoint RIGHT_HAND -> o
+    org.openni.SkeletonJoint RIGHT_FINGER_TIP -> p
+    org.openni.SkeletonJoint LEFT_HIP -> q
+    org.openni.SkeletonJoint LEFT_KNEE -> r
+    org.openni.SkeletonJoint LEFT_ANKLE -> s
+    org.openni.SkeletonJoint LEFT_FOOT -> t
+    org.openni.SkeletonJoint RIGHT_HIP -> u
+    org.openni.SkeletonJoint RIGHT_KNEE -> v
+    org.openni.SkeletonJoint RIGHT_ANKLE -> w
+    org.openni.SkeletonJoint RIGHT_FOOT -> x
+    int val -> y
+    org.openni.SkeletonJoint[] ENUM$VALUES -> z
+    int toNative() -> a
+    org.openni.SkeletonJoint[] values() -> values
+    org.openni.SkeletonJoint valueOf(java.lang.String) -> valueOf
+org.openni.SkeletonJointPosition -> org.openni.bp:
+    org.openni.Point3D position -> a
+    org.openni.Point3D getPosition() -> a
+org.openni.SkeletonProfile -> org.openni.bq:
+    org.openni.SkeletonProfile NONE -> a
+    org.openni.SkeletonProfile ALL -> b
+    org.openni.SkeletonProfile UPPER_BODY -> c
+    org.openni.SkeletonProfile LOWER_BODY -> d
+    org.openni.SkeletonProfile HEAD_HANDS -> e
+    int val -> f
+    org.openni.SkeletonProfile[] ENUM$VALUES -> g
+    int toNative() -> a
+    org.openni.SkeletonProfile[] values() -> values
+    org.openni.SkeletonProfile valueOf(java.lang.String) -> valueOf
+org.openni.StateChangedObservable -> org.openni.br:
+    int registerNative(org.openni.OutArg) -> a
+    int registerNative(java.lang.String,org.openni.OutArg) -> a
+org.openni.StatusException -> org.openni.bs:
+org.openni.UserGenerator -> org.openni.bt:
+    org.openni.Observable newUserEvent -> a
+    org.openni.Observable lostUserEvent -> b
+    org.openni.Observable userExitEvent -> c
+    org.openni.Observable userReenterEvent -> d
+    org.openni.UserGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors) -> a
+    org.openni.UserGenerator create(org.openni.Context) -> a
+    int[] getUsers() -> a
+    void getUserPixels(int,org.openni.SceneMetaData) -> a
+    org.openni.SceneMetaData getUserPixels(int) -> a
+    org.openni.PoseDetectionCapability getPoseDetectionCapability() -> b
+    org.openni.SkeletonCapability getSkeletonCapability() -> f
+    org.openni.IObservable getNewUserEvent() -> g
+org.openni.UserGenerator$1 -> org.openni.bu:
+    org.openni.UserGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.UserGenerator$2 -> org.openni.bv:
+    org.openni.UserGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.UserGenerator$3 -> org.openni.bw:
+    org.openni.UserGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.UserGenerator$4 -> org.openni.bx:
+    org.openni.UserGenerator this$0 -> a
+    int registerNative(org.openni.OutArg) -> a
+org.openni.WrapperUtils -> org.openni.by:
+    void throwOnError(int) -> a
+    java.lang.String getErrorMessage(int) -> b
+org.openni.android.OpenNIHelper -> org.openni.a.a:
+    android.content.Context mAndroidContext -> a
+    java.lang.String mActionUsbPermission -> b
+    org.openni.android.OpenNIHelper$DevicePermissionListener mDevicePermissionListener -> c
+    android.content.BroadcastReceiver mUsbReceiver -> d
+    void requestDevicePermission(android.hardware.usb.UsbDevice,org.openni.android.OpenNIHelper$DevicePermissionListener) -> a
+    java.util.HashMap getDeviceList() -> a
+    android.hardware.usb.UsbDeviceConnection openDevice(android.hardware.usb.UsbDevice) -> a
+    void shutdown() -> b
+    void retrieveXml(java.lang.String) -> a
+    java.lang.String access$0(org.openni.android.OpenNIHelper) -> a
+    org.openni.android.OpenNIHelper$DevicePermissionListener access$1(org.openni.android.OpenNIHelper) -> b
+org.openni.android.OpenNIHelper$1 -> org.openni.a.b:
+    org.openni.android.OpenNIHelper this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.openni.android.OpenNIHelper$DevicePermissionListener -> org.openni.a.c:
+    void onDevicePermissionGranted(android.hardware.usb.UsbDevice) -> a
+    void onDevicePermissionDenied(android.hardware.usb.UsbDevice) -> b

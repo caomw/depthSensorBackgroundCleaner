@@ -1,0 +1,861 @@
+com.orbbec.SkeletonViewer.BuildConfig
+com.orbbec.SkeletonViewer.MainActivity:
+    296:302:private void displayInfo(java.lang.String)
+    23:23:static synthetic void access$000(com.orbbec.SkeletonViewer.MainActivity,java.lang.String)
+com.orbbec.SkeletonViewer.MainActivity$2
+com.orbbec.SkeletonViewer.MainActivity$CalibrationCompleteObserver:
+    336:355:public void update(org.openni.IObservable,org.openni.CalibrationProgressEventArgs)
+    331:331:public bridge synthetic void update(org.openni.IObservable,java.lang.Object)
+com.orbbec.SkeletonViewer.MainActivity$LostUserObserver
+com.orbbec.SkeletonViewer.MainActivity$NewUserObserver:
+    307:319:public void update(org.openni.IObservable,org.openni.UserEventArgs)
+    304:304:public bridge synthetic void update(org.openni.IObservable,java.lang.Object)
+com.orbbec.SkeletonViewer.MainActivity$PoseDetectedObserver:
+    361:370:public void update(org.openni.IObservable,org.openni.PoseDetectionEventArgs)
+    358:358:public bridge synthetic void update(org.openni.IObservable,java.lang.Object)
+com.orbbec.SkeletonViewer.R
+com.orbbec.SkeletonViewer.R$attr
+com.orbbec.SkeletonViewer.R$drawable
+com.orbbec.SkeletonViewer.R$id
+com.orbbec.SkeletonViewer.R$layout
+com.orbbec.SkeletonViewer.R$string
+com.orbbec.astrakernel.AstraContext:
+    private static final java.lang.String SAMPLE_XML_FILE
+    124:135:protected void retrieveXml(java.lang.String)
+    149:149:public long getContextForNative()
+com.orbbec.astrakernel.DepthData:
+    25:32:public void setMapOutputMode(int,int,int)
+    42:43:public void Close()
+    48:48:public org.openni.Point3D[] convertProjectiveToRealWorld(org.openni.Point3D[])
+    54:54:public org.openni.Point3D convertProjectiveToRealWorld(org.openni.Point3D)
+    66:66:public org.openni.Point3D[] convertRealWorldToProjective(org.openni.Point3D[])
+com.orbbec.astrakernel.IRKeyEvent
+com.orbbec.astrastartlibs.CursorGlview
+com.orbbec.astrastartlibs.CursorGlview$CursorRender
+com.orbbec.astrastartlibs.GlobalOSDService
+com.orbbec.astrastartlibs.GlobalOSDService$1
+com.orbbec.astrastartlibs.GlobalOSDService$MCStatusReceiver
+com.orbbec.astrastartlibs.GlobalOSDService$OSDView
+com.orbbec.astrastartlibs.GlobalOSDService$OSDView$Renderer
+com.orbbec.astrastartlibs.HandTracker
+com.orbbec.astrastartlibs.HandTracker$GestureRecognizedObserver
+com.orbbec.astrastartlibs.MTPointer
+com.orbbec.astrastartlibs.NativeMethods
+com.orbbec.astrastartlibs.OSDCursor
+com.orbbec.astrastartlibs.RGBData
+com.orbbec.astrastartlibs.Square
+com.orbbec.astrastartlibs.UserTracker:
+    62:62:public boolean needPoseForCalibration()
+    67:68:public void startPoseDetection(java.lang.String,int)
+    72:73:public void requestSkeletonCalibration(int,boolean)
+    76:77:public void stopPoseDetection(int)
+    88:88:public org.openni.Point3D getCoM(int)
+    104:105:public void startTracking(int)
+org.openni.ActiveHandDirectionEventArgs
+org.openni.ActiveHandEventArgs
+org.openni.AlternativeViewpointCapability
+org.openni.AlternativeViewpointCapability$1
+org.openni.AntiFlickerCapability
+org.openni.AntiFlickerCapability$1
+org.openni.AudioGenerator:
+    74:81:public static org.openni.AudioGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors)
+    93:93:public static org.openni.AudioGenerator create(org.openni.Context,org.openni.Query)
+    104:104:public static org.openni.AudioGenerator create(org.openni.Context)
+    114:118:public org.openni.WaveOutputMode[] getSupportedMapOutputModes()
+    128:133:public org.openni.WaveOutputMode getWaveOutputMode()
+    143:145:public void setWaveOutputMode(org.openni.WaveOutputMode)
+    151:151:public org.openni.IStateChangedObservable getMapOutputModeChangedEvent()
+    159:160:public void getMetaData(org.openni.AudioMetaData)
+    168:170:public org.openni.AudioMetaData getMetaData()
+org.openni.AudioGenerator$1:
+    59:60:protected void unregisterNative(long)
+org.openni.AudioMetaData
+org.openni.BoundingBox3D
+org.openni.CalibrationProgressEventArgs
+org.openni.CalibrationProgressStatus
+org.openni.CalibrationStartEventArgs
+org.openni.Capability
+org.openni.Codec:
+    52:57:public static org.openni.Codec create(org.openni.Context,org.openni.CodecID,org.openni.ProductionNode)
+    66:67:public org.openni.CodecID getCodecID()
+    81:84:public int EncodeData(long,int,long,int)
+    98:101:public int DecodeData(long,int,long,int)
+org.openni.CodecID
+org.openni.Context:
+    74:74:public static org.openni.Context fromNative(long)
+    94:97:public static org.openni.Version getVersion()
+    108:112:public org.openni.ScriptNode runXmlScriptFromFile(java.lang.String)
+    123:127:public org.openni.ScriptNode runXmlScript(java.lang.String)
+    138:141:public org.openni.Player openFileRecordingEx(java.lang.String)
+    149:150:public void release()
+    159:161:public void addLicense(org.openni.License)
+    170:173:public org.openni.License[] enumerateLicenses()
+    185:192:public org.openni.NodeInfoList enumerateProductionTrees(org.openni.NodeType,org.openni.Query)
+    203:203:public org.openni.NodeInfoList enumerateProductionTrees(org.openni.NodeType)
+    214:217:public org.openni.ProductionNode createProductionTree(org.openni.NodeInfo)
+    229:236:public org.openni.ProductionNode createAnyProductionTree(org.openni.NodeType,org.openni.Query)
+    246:249:public org.openni.NodeInfoList enumerateExistingNodes()
+    260:263:public org.openni.NodeInfoList enumerateExistingNodes(org.openni.NodeType)
+    274:281:public org.openni.ProductionNode findExistingNode(org.openni.NodeType)
+    292:299:public org.openni.ProductionNode getProductionNodeByName(java.lang.String)
+    310:310:public org.openni.NodeInfo getProductionNodeInfoByName(java.lang.String)
+    329:331:public void stopGeneratingAll()
+    339:339:public boolean getGlobalMirror()
+    349:351:public void setGlobalMirror(boolean)
+    359:361:public void waitAndUpdateAll()
+    370:372:public void waitOneUpdateAll(org.openni.ProductionNode)
+    390:392:public void waitNoneUpdateAll()
+    400:400:public org.openni.IObservable getErrorStateChangedEvent()
+    409:409:public org.openni.IObservable getNodeCreatedEvent()
+    418:418:public org.openni.IObservable getNodeDestroyedEvent()
+    429:432:public static org.openni.ProductionNode createProductionNodeFromNative(long)
+    533:534:private Context(long)
+    606:608:org.openni.ProductionNode createProductionNodeObject(long)
+org.openni.Context$1:
+    463:464:protected void unregisterNative(long)
+    469:470:public void callback(int)
+org.openni.Context$2:
+    484:485:protected void unregisterNative(long)
+    490:492:public void callback(long)
+org.openni.Context$3:
+    506:507:protected void unregisterNative(long)
+    512:513:public void callback(java.lang.String)
+org.openni.Cropping
+org.openni.CroppingCapability
+org.openni.CroppingCapability$1
+org.openni.DepthGenerator:
+    private org.openni.DepthMap currDepthMap
+    private int currDepthMapFrameID
+    88:88:public static org.openni.DepthGenerator create(org.openni.Context,org.openni.Query)
+    109:119:public org.openni.DepthMap getDepthMap()
+    128:128:public int getDeviceMaxDepth()
+    138:142:public org.openni.FieldOfView getFieldOfView()
+    149:149:public org.openni.IStateChangedObservable getFieldOfViewChangedEvent()
+    169:172:public org.openni.Point3D[] convertProjectiveToRealWorld(org.openni.Point3D[])
+    191:194:public org.openni.Point3D convertProjectiveToRealWorld(org.openni.Point3D)
+    252:252:public org.openni.UserPositionCapability getUserPositionCapability()
+org.openni.DepthGenerator$1:
+    54:55:protected void unregisterNative(long)
+org.openni.DepthMap:
+    50:51:DepthMap(long,int,int)
+org.openni.DepthMetaData:
+    private int zRes
+    47:47:public int getZRes()
+    58:59:public void setZRes(int)
+org.openni.Device:
+    74:74:public static org.openni.Device create(org.openni.Context,org.openni.Query)
+org.openni.DeviceIdentificationCapability:
+    79:82:public java.lang.String getSerialNumber()
+org.openni.Direction
+org.openni.EnumerationErrors:
+    35:36:public EnumerationErrors()
+    45:46:public boolean isEmpty()
+    73:74:private EnumerationErrors(long)
+    78:81:private static long create()
+org.openni.ErrorStateCapability
+org.openni.ErrorStateCapability$1
+org.openni.ErrorStateEventArgs
+org.openni.EventArgs
+org.openni.FieldOfView
+org.openni.FrameSyncCapability
+org.openni.FrameSyncCapability$1
+org.openni.GeneralException:
+    private static final long serialVersionUID
+org.openni.GeneralIntCapability
+org.openni.GeneralIntCapability$1
+org.openni.Generator:
+    89:91:public void startGenerating()
+    99:99:public boolean isGenerating()
+    108:110:public void stopGenerating()
+    118:118:public org.openni.IStateChangedObservable getGenerationRunningChangedEvent()
+    127:128:public boolean isNewDataAvailable()
+    137:139:public long getAvailableTimestamp()
+    148:148:public org.openni.IStateChangedObservable getNewDataAvailableEvent()
+    157:159:public void waitAndUpdateData()
+    167:167:public boolean isDataNew()
+    176:176:public int getDataSize()
+    185:185:public long getDataPtr()
+    195:199:public java.nio.ByteBuffer createDataByteBuffer()
+    209:210:public void copyDataToBuffer(java.nio.ByteBuffer,int)
+    218:218:public long getTimestamp()
+    227:227:public int getFrameID()
+    237:237:public org.openni.MirrorCapability getMirrorCapability()
+    247:247:public org.openni.AlternativeViewpointCapability getAlternativeViewpointCapability()
+    257:257:public org.openni.FrameSyncCapability getFrameSyncCapability()
+org.openni.Generator$1:
+    63:64:protected void unregisterNative(long)
+org.openni.Generator$2:
+    78:79:protected void unregisterNative(long)
+org.openni.GestureGenerator:
+    164:171:public static org.openni.GestureGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors)
+    182:182:public static org.openni.GestureGenerator create(org.openni.Context,org.openni.Query)
+    193:193:public static org.openni.GestureGenerator create(org.openni.Context)
+    203:205:public void addGesture(java.lang.String)
+    214:221:public void addGesture(java.lang.String,org.openni.BoundingBox3D)
+    229:231:public void removeGesture(java.lang.String)
+    239:239:public int getNumberOfAvailableGestures()
+    249:249:public boolean isGestureAvailable(java.lang.String)
+    258:258:public boolean isGestureProgressSupported(java.lang.String)
+    268:271:public java.lang.String[] enumerateAllGestures()
+    281:284:public java.lang.String[] getAllActiveGestures()
+    294:294:public org.openni.IObservable getGestureRecognizedEvent()
+    302:302:public org.openni.IObservable getGestureProgressEvent()
+    310:310:public org.openni.IObservable getGestureIntermediateStageCompletedEvent()
+    318:318:public org.openni.IObservable getGestureReadyForNextIntermediateStageEvent()
+    326:326:public org.openni.IStateChangedObservable getGestureChangedEvent()
+org.openni.GestureGenerator$1:
+    69:70:protected void unregisterNative(long)
+    75:76:public void callback(java.lang.String,org.openni.Point3D,org.openni.Point3D)
+org.openni.GestureGenerator$2:
+    89:90:protected void unregisterNative(long)
+    95:96:public void callback(java.lang.String,org.openni.Point3D,float)
+org.openni.GestureGenerator$3:
+    109:110:protected void unregisterNative(long)
+    115:116:public void callback(java.lang.String,org.openni.Point3D)
+org.openni.GestureGenerator$4:
+    129:130:protected void unregisterNative(long)
+    135:136:public void callback(java.lang.String,org.openni.Point3D)
+org.openni.GestureGenerator$5:
+    148:149:protected void unregisterNative(long)
+org.openni.GesturePositionEventArgs
+org.openni.GestureProgressEventArgs
+org.openni.GestureRecognizedEventArgs
+org.openni.HandTouchingFOVEdgeCapability
+org.openni.HandTouchingFOVEdgeCapability$1
+org.openni.HandleWrapper
+org.openni.HandsGenerator:
+    125:132:public static org.openni.HandsGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors)
+    144:144:public static org.openni.HandsGenerator create(org.openni.Context,org.openni.Query)
+    155:155:public static org.openni.HandsGenerator create(org.openni.Context)
+    166:168:public void StopTracking(int)
+    176:178:public void StopTrackingAll()
+    189:191:public void StartTracking(org.openni.Point3D)
+    203:205:public void SetSmoothing(float)
+    214:214:public org.openni.HandTouchingFOVEdgeCapability getHandTouchingFOVEdgeCapability()
+    223:223:public org.openni.IObservable getHandCreateEvent()
+    231:231:public org.openni.IObservable getHandUpdateEvent()
+    239:239:public org.openni.IObservable getHandDestroyEvent()
+org.openni.HandsGenerator$1:
+    63:64:protected void unregisterNative(long)
+    69:70:public void callback(int,org.openni.Point3D,float)
+org.openni.HandsGenerator$2:
+    83:84:protected void unregisterNative(long)
+    89:90:public void callback(int,org.openni.Point3D,float)
+org.openni.HandsGenerator$3:
+    103:104:protected void unregisterNative(long)
+    109:110:public void callback(int,float)
+org.openni.IObservable:
+    public abstract void deleteObserver(org.openni.IObserver)
+org.openni.IObserver:
+    public abstract void update(org.openni.IObservable,java.lang.Object)
+org.openni.IRGenerator:
+    private org.openni.IRMap currIRMap
+    private int currIRMapFrameID
+    59:66:public static org.openni.IRGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors)
+    78:78:public static org.openni.IRGenerator create(org.openni.Context,org.openni.Query)
+    89:89:public static org.openni.IRGenerator create(org.openni.Context)
+    99:109:public org.openni.IRMap getIRMap()
+    118:119:public void getMetaData(org.openni.IRMetaData)
+    128:130:public org.openni.IRMetaData getMetaData()
+org.openni.IRMap
+org.openni.IRMetaData
+org.openni.ImageGenerator:
+    private org.openni.ImageMap currImageMap
+    private int currImageMapFrameID
+    69:76:public static org.openni.ImageGenerator create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors)
+    87:87:public static org.openni.ImageGenerator create(org.openni.Context,org.openni.Query)
+    98:98:public static org.openni.ImageGenerator create(org.openni.Context)
+    108:108:public boolean isPixelFormatSupported(org.openni.PixelFormat)
+    118:120:public void setPixelFormat(org.openni.PixelFormat)
+    128:128:public org.openni.PixelFormat getPixelFormat()
+    138:148:public org.openni.ImageMap getImageMap()
+    155:155:public org.openni.IStateChangedObservable getPixelFormatChangedEvent()
+    164:165:public void getMetaData(org.openni.ImageMetaData)
+    173:175:public org.openni.ImageMetaData getMetaData()
+org.openni.ImageGenerator$1:
+    55:56:protected void unregisterNative(long)
+org.openni.ImageMap
+org.openni.ImageMetaData
+org.openni.InactiveHandEventArgs
+org.openni.License
+org.openni.LockHandle
+org.openni.Log
+org.openni.Log$Severity
+org.openni.Map:
+    50:56:Map(long,int,int,int)
+    64:64:public long getNativePtr()
+    73:74:public void setNativePtr(long)
+    98:99:public void copyToBuffer(java.nio.ByteBuffer,int)
+    109:109:protected long getPixelPtr(int,int)
+    125:126:public void setXRes(int)
+    141:142:public void setYRes(int)
+    150:150:public int getBytesPerPixel()
+org.openni.MapGenerator:
+    66:70:public org.openni.MapOutputMode[] getSupportedMapOutputModes()
+    80:85:public org.openni.MapOutputMode getMapOutputMode()
+    95:97:public void setMapOutputMode(org.openni.MapOutputMode)
+    103:103:public org.openni.IStateChangedObservable getMapOutputModeChangedEvent()
+    113:113:public org.openni.CroppingCapability getCroppingCapability()
+    124:124:public org.openni.GeneralIntCapability getBrightnessCapability()
+    135:135:public org.openni.GeneralIntCapability getContrastCapability()
+    146:146:public org.openni.GeneralIntCapability getSaturationCapability()
+    157:157:public org.openni.GeneralIntCapability getHueCapability()
+    168:168:public org.openni.GeneralIntCapability getSharpnessCapability()
+    179:179:public org.openni.GeneralIntCapability getGammaCapability()
+    190:190:public org.openni.GeneralIntCapability getWhiteBalanceCapability()
+    201:201:public org.openni.GeneralIntCapability getBacklightCompensationCapability()
+    212:212:public org.openni.GeneralIntCapability getGainCapability()
+    223:223:public org.openni.GeneralIntCapability getPanCapability()
+    234:234:public org.openni.GeneralIntCapability getTiltCapability()
+    245:245:public org.openni.GeneralIntCapability getRollCapability()
+    256:256:public org.openni.GeneralIntCapability getZoomCapability()
+    267:267:public org.openni.GeneralIntCapability getExposureCapability()
+    278:278:public org.openni.GeneralIntCapability getIrisCapability()
+    289:289:public org.openni.GeneralIntCapability getFocusCapability()
+    300:300:public org.openni.GeneralIntCapability getLowLightCompensationCapability()
+    311:311:public org.openni.AntiFlickerCapability getAntiFlickerCapability()
+org.openni.MapGenerator$1:
+    54:55:protected void unregisterNative(long)
+org.openni.MapMetaData:
+    private int xRes
+    private int yRes
+    private int xOffset
+    private int yOffset
+    private int fullXRes
+    private int fullYRes
+    private int FPS
+    46:46:public int getXRes()
+    53:55:public void setXRes(int)
+    61:61:public int getYRes()
+    68:70:public void setYRes(int)
+    76:76:public int getXOffset()
+    83:84:public void setXOffset(int)
+    90:90:public int getYOffset()
+    97:98:public void setYOffset(int)
+    104:104:public int getFullXRes()
+    111:112:public void setFullXRes(int)
+    118:118:public int getFullYRes()
+    125:126:public void setFullYRes(int)
+    132:132:public org.openni.PixelFormat getPixelFormat()
+    139:139:public int getFPS()
+    147:148:public void setFPS(int)
+    162:164:public void setDataPtr(long)
+    172:174:protected void setPixelFormat(org.openni.PixelFormat)
+org.openni.MapOutputMode
+org.openni.MirrorCapability
+org.openni.MirrorCapability$1
+org.openni.NativeMethods:
+    33:33:NativeMethods()
+    static native byte readByte(long)
+    static native short readShort(long)
+    static native int readInt(long)
+    static native long readLong(long)
+    static native long createProductionNodeDescription(int,java.lang.String,java.lang.String,byte,byte,short,int)
+    static native void freeProductionNodeDescription(long)
+    static native int xnContextRunXmlScriptFromFileEx(long,java.lang.String,long,org.openni.OutArg)
+    static native int xnContextRunXmlScriptEx(long,java.lang.String,long,org.openni.OutArg)
+    static native int xnContextOpenFileRecordingEx(long,java.lang.String,org.openni.OutArg)
+    static native int xnEnumerateProductionTrees(long,int,long,org.openni.OutArg,long)
+    static native int xnCreateProductionTree(long,long,org.openni.OutArg)
+    static native int xnCreateAnyProductionTree(long,int,long,org.openni.OutArg,long)
+    static native int xnEnumerateExistingNodes(long,org.openni.OutArg)
+    static native int xnEnumerateExistingNodesByType(long,int,org.openni.OutArg)
+    static native int xnFindExistingRefNodeByType(long,int,org.openni.OutArg)
+    static native int xnGetRefNodeHandleByName(long,java.lang.String,org.openni.OutArg)
+    static native int xnWaitAndUpdateAll(long)
+    static native int xnWaitOneUpdateAll(long,long)
+    static native int xnWaitNoneUpdateAll(long)
+    static native int xnStopGeneratingAll(long)
+    static native int xnSetGlobalMirror(long,boolean)
+    static native boolean xnGetGlobalMirror(long)
+    static native int xnGetGlobalErrorState(long)
+    static native void xnUnregisterFromGlobalErrorStateChange(long,long)
+    static native void xnUnregisterFromNodeCreation(long,long)
+    static native void xnUnregisterFromNodeDestruction(long,long)
+    static native int xnAddLicense(long,java.lang.String,java.lang.String)
+    static native int xnEnumerateLicenses(long,org.openni.OutArg)
+    static native int xnEnumerationErrorsAllocate(org.openni.OutArg)
+    static native int xnEnumerationErrorsClear(long)
+    static native long xnEnumerationErrorsGetFirst(long)
+    static native boolean xnEnumerationErrorsIteratorIsValid(long)
+    static native int xnNodeInfoSetInstanceName(long,java.lang.String)
+    static native org.openni.ProductionNodeDescription xnNodeInfoGetDescription(long)
+    static native int xnNodeInfoGetTreeStringRepresentation(long,org.openni.OutArg)
+    static native java.lang.String xnNodeInfoGetInstanceName(long)
+    static native java.lang.String xnNodeInfoGetCreationInfo(long)
+    static native long xnNodeInfoGetNeededNodes(long)
+    static native long xnNodeInfoGetRefHandle(long)
+    static native int xnNodeInfoListAllocate(org.openni.OutArg)
+    static native void xnNodeInfoListFree(long)
+    static native int xnNodeInfoListAdd(long,long,java.lang.String,long)
+    static native int xnNodeInfoListAddNode(long,long)
+    static native int xnNodeInfoListAddNodeFromList(long,long)
+    static native int xnNodeInfoListRemove(long,long)
+    static native int xnNodeInfoListClear(long)
+    static native int xnNodeInfoListAppend(long,long)
+    static native boolean xnNodeInfoListIsEmpty(long)
+    static native long xnNodeInfoListGetFirst(long)
+    static native boolean xnNodeInfoListIteratorIsValid(long)
+    static native long xnNodeInfoListGetCurrent(long)
+    static native long xnNodeInfoListGetNext(long)
+    static native int xnNodeQueryAllocate(org.openni.OutArg)
+    static native int xnNodeQuerySetVendor(long,java.lang.String)
+    static native int xnNodeQuerySetName(long,java.lang.String)
+    static native int xnNodeQuerySetMinVersion(long,byte,byte,short,int)
+    static native int xnNodeQuerySetMaxVersion(long,byte,byte,short,int)
+    static native int xnNodeQueryAddSupportedCapability(long,java.lang.String)
+    static native int xnNodeQueryAddSupportedMapOutputMode(long,int,int,int)
+    static native int xnNodeQuerySetSupportedMinUserPositions(long,int)
+    static native int xnNodeQuerySetExistingNodeOnly(long,boolean)
+    static native int xnNodeQuerySetNonExistingNodeOnly(long,boolean)
+    static native int xnNodeQueryAddNeededNode(long,java.lang.String)
+    static native int xnNodeQuerySetCreationInfo(long,java.lang.String)
+    static native int xnNodeQueryFilterList(long,long,long)
+    static native long xnGetNodeInfo(long)
+    static native java.lang.String xnGetNodeName(long)
+    static native long xnGetRefContextFromNodeHandle(long)
+    static native boolean xnIsCapabilitySupported(long,java.lang.String)
+    static native int xnSetIntProperty(long,java.lang.String,long)
+    static native int xnSetRealProperty(long,java.lang.String,double)
+    static native int xnSetStringProperty(long,java.lang.String,java.lang.String)
+    static native int xnSetGeneralProperty(long,java.lang.String,int,long)
+    static native int xnSetGeneralPropertyArray(long,java.lang.String,byte[])
+    static native int xnGetIntProperty(long,java.lang.String,org.openni.OutArg)
+    static native int xnGetRealProperty(long,java.lang.String,org.openni.OutArg)
+    static native int xnGetStringProperty(long,java.lang.String,org.openni.OutArg)
+    static native int xnGetGeneralProperty(long,java.lang.String,int,long)
+    static native int xnGetGeneralPropertyArray(long,java.lang.String,byte[])
+    static native int xnLockNodeForChanges(long,org.openni.OutArg)
+    static native int xnUnlockNodeForChanges(long,int)
+    static native int xnLockedNodeStartChanges(long,int)
+    static native int xnLockedNodeEndChanges(long,int)
+    static native int xnAddNeededNode(long,long)
+    static native int xnRemoveNeededNode(long,long)
+    static native int xnGetSerialNumber(long,org.openni.OutArg)
+    static native int xnGetNodeErrorState(long)
+    static native int xnRegisterToNodeErrorStateChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromNodeErrorStateChange(long,long)
+    static native int xnGetGeneralIntRange(long,java.lang.String,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg)
+    static native int xnGetGeneralIntValue(long,java.lang.String,org.openni.OutArg)
+    static native int xnSetGeneralIntValue(long,java.lang.String,int)
+    static native int xnRegisterToGeneralIntValueChange(long,java.lang.String,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromGeneralIntValueChange(long,java.lang.String,long)
+    static native int xnStartGenerating(long)
+    static native boolean xnIsGenerating(long)
+    static native int xnStopGenerating(long)
+    static native void xnUnregisterFromGenerationRunningChange(long,long)
+    static native void xnUnregisterFromNewDataAvailable(long,long)
+    static native boolean xnIsNewDataAvailable(long,org.openni.OutArg)
+    static native int xnWaitAndUpdateData(long)
+    static native boolean xnIsDataNew(long)
+    static native long xnGetData(long)
+    static native int xnGetDataSize(long)
+    static native long xnGetTimestamp(long)
+    static native int xnGetFrameID(long)
+    static native int xnSetMirror(long,boolean)
+    static native boolean xnIsMirrored(long)
+    static native int xnRegisterToMirrorChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromMirrorChange(long,long)
+    static native boolean xnIsViewPointSupported(long,long)
+    static native int xnSetViewPoint(long,long)
+    static native int xnResetViewPoint(long)
+    static native boolean xnIsViewPointAs(long,long)
+    static native int xnRegisterToViewPointChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromViewPointChange(long,long)
+    static native int xnGetPixelCoordinatesInViewPoint(long,long,int,int,org.openni.OutArg,org.openni.OutArg)
+    static native boolean xnCanFrameSyncWith(long,long)
+    static native int xnFrameSyncWith(long,long)
+    static native int xnStopFrameSyncWith(long,long)
+    static native boolean xnIsFrameSyncedWith(long,long)
+    static native int xnRegisterToFrameSyncChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromFrameSyncChange(long,long)
+    static native int xnGetSupportedMapOutputModesCount(long)
+    static native int xnGetSupportedMapOutputModes(long,org.openni.MapOutputMode[])
+    static native int xnSetMapOutputMode(long,int,int,int)
+    static native int xnGetMapOutputMode(long,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg)
+    static native void xnUnregisterFromMapOutputModeChange(long,long)
+    static native int xnGetBytesPerPixel(long)
+    static native int xnSetCropping(long,int,int,int,int,boolean)
+    static native int xnGetCropping(long,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg)
+    static native int xnRegisterToCroppingChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromCroppingChange(long,long)
+    static native int xnSetPowerLineFrequency(long,int)
+    static native int xnGetPowerLineFrequency(long)
+    static native int xnRegisterToPowerLineFrequencyChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromPowerLineFrequencyChange(long,long)
+    static native short xnGetDeviceMaxDepth(long)
+    static native int xnGetDepthFieldOfView(long,org.openni.OutArg,org.openni.OutArg)
+    static native void xnUnregisterFromDepthFieldOfViewChange(long,long)
+    static native int xnConvertProjectiveToRealWorld(long,org.openni.Point3D[],org.openni.Point3D[])
+    static native long xnGetDepthMap(long)
+    static native int xnGetSupportedUserPositionsCount(long)
+    static native int xnSetUserPosition(long,int,float,float,float,float,float,float)
+    static native int xnGetUserPosition(long,int,org.openni.OutArg)
+    static native int xnRegisterToUserPositionChange(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromUserPositionChange(long,long)
+    static native int xnCreateImageGenerator(long,org.openni.OutArg,long,long)
+    static native long xnGetImageMap(long)
+    static native boolean xnIsPixelFormatSupported(long,int)
+    static native int xnSetPixelFormat(long,int)
+    static native int xnGetPixelFormat(long)
+    static native void xnUnregisterFromPixelFormatChange(long,long)
+    static native void xnGetImageMetaData(long,org.openni.ImageMetaData)
+    static native int xnCreateIRGenerator(long,org.openni.OutArg,long,long)
+    static native long xnGetIRMap(long)
+    static native void xnGetIRMetaData(long,org.openni.IRMetaData)
+    static native int xnCreateGestureGenerator(long,org.openni.OutArg,long,long)
+    static native int xnAddGesture(long,java.lang.String)
+    static native int xnAddGesture(long,java.lang.String,float,float,float,float,float,float)
+    static native int xnRemoveGesture(long,java.lang.String)
+    static native int xnGetAllActiveGestures(long,org.openni.OutArg)
+    static native int xnGetNumberOfAvailableGestures(long)
+    static native int xnEnumerateAllGestures(long,org.openni.OutArg)
+    static native boolean xnIsGestureAvailable(long,java.lang.String)
+    static native boolean xnIsGestureProgressSupported(long,java.lang.String)
+    static native void xnUnregisterGestureCallbacks(long,long)
+    static native void xnUnregisterFromGestureChange(long,long)
+    static native void xnUnregisterFromGestureIntermediateStageCompleted(long,long)
+    static native void xnUnregisterFromGestureReadyForNextIntermediateStage(long,long)
+    static native int xnCreateSceneAnalyzer(long,org.openni.OutArg,long,long)
+    static native long xnGetLabelMap(long)
+    static native int xnGetFloor(long,org.openni.OutArg,org.openni.OutArg)
+    static native void xnGetSceneMetaData(long,org.openni.SceneMetaData)
+    static native int xnGetNumberOfUsers(long)
+    static native int xnGetUserCoM(long,int,org.openni.OutArg)
+    static native void xnUnregisterUserCallbacks(long,long)
+    static native void xnUnregisterFromUserExit(long,long)
+    static native void xnUnregisterFromUserReEnter(long,long)
+    static native boolean xnIsJointAvailable(long,int)
+    static native boolean xnIsProfileAvailable(long,int)
+    static native int xnSetJointActive(long,int,boolean)
+    static native boolean xnIsJointActive(long,int)
+    static native void xnUnregisterFromJointConfigurationChange(long,long)
+    static native int xnEnumerateActiveJoints(long,org.openni.OutArg)
+    static native int xnGetSkeletonJoint(long,int,int,org.openni.OutArg)
+    static native int xnGetSkeletonJointOrientation(long,int,int,org.openni.OutArg)
+    static native boolean xnIsSkeletonCalibrated(long,int)
+    static native boolean xnIsSkeletonCalibrating(long,int)
+    static native int xnRequestSkeletonCalibration(long,int,boolean)
+    static native int xnAbortSkeletonCalibration(long,int)
+    static native int xnSaveSkeletonCalibrationDataToFile(long,int,java.lang.String)
+    static native int xnLoadSkeletonCalibrationDataFromFile(long,int,java.lang.String)
+    static native int xnSaveSkeletonCalibrationData(long,int,int)
+    static native int xnLoadSkeletonCalibrationData(long,int,int)
+    static native int xnClearSkeletonCalibrationData(long,int)
+    static native boolean xnIsSkeletonCalibrationData(long,int)
+    static native int xnStartSkeletonTracking(long,int)
+    static native int xnStopSkeletonTracking(long,int)
+    static native int xnResetSkeleton(long,int)
+    static native boolean xnNeedPoseForSkeletonCalibration(long)
+    static native int xnSetSkeletonSmoothing(long,float)
+    static native void xnUnregisterFromCalibrationStart(long,long)
+    static native void xnUnregisterFromCalibrationInProgress(long,long)
+    static native void xnUnregisterFromCalibrationComplete(long,long)
+    static native int xnGetNumberOfPoses(long)
+    static native int xnGetAllAvailablePoses(long,org.openni.OutArg)
+    static native int xnStartPoseDetection(long,java.lang.String,int)
+    static native int xnStopPoseDetection(long,int)
+    static native int xnStopSinglePoseDetection(long,int,java.lang.String)
+    static native void xnUnregisterFromPoseDetected(long,long)
+    static native void xnUnregisterFromOutOfPose(long,long)
+    static native void xnUnregisterFromPoseDetectionInProgress(long,long)
+    static native boolean xnIsPoseSupported(long,java.lang.String)
+    static native int xnGetPoseStatus(long,int,java.lang.String,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg)
+    static native int xnCreateHandsGenerator(long,org.openni.OutArg,long,long)
+    static native void xnUnregisterHandCallbacks(long,long)
+    static native int xnStopTracking(long,int)
+    static native int xnStopTrackingAll(long)
+    static native int xnStartTracking(long,float,float,float)
+    static native int xnSetTrackingSmoothing(long,float)
+    static native int xnRegisterToHandTouchingFOVEdge(long,java.lang.Object,java.lang.String,org.openni.OutArg)
+    static native void xnUnregisterFromHandTouchingFOVEdge(long,long)
+    static native int xnCreateAudioGenerator(long,org.openni.OutArg,long,long)
+    static native long xnGetAudioBuffer(long)
+    static native int xnGetSupportedWaveOutputModesCount(long)
+    static native int xnGetSupportedWaveOutputModes(long,org.openni.WaveOutputMode[])
+    static native int xnSetWaveOutputMode(long,int,short,byte)
+    static native int xnGetWaveOutputMode(long,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg)
+    static native void xnUnregisterFromWaveOutputModeChanges(long,long)
+    static native void xnGetAudioMetaData(long,org.openni.AudioMetaData)
+    static native int xnCreateCodec(long,int,long,org.openni.OutArg)
+    static native int xnGetCodecID(long)
+    static native int xnEncodeData(long,long,int,long,int,org.openni.OutArg)
+    static native int xnDecodeData(long,long,int,long,int,org.openni.OutArg)
+    static native int xnCreateRecorder(long,java.lang.String,org.openni.OutArg)
+    static native int xnSetRecorderDestination(long,int,java.lang.String)
+    static native int xnGetRecorderDestination(long,org.openni.OutArg,org.openni.OutArg)
+    static native int xnAddNodeToRecording(long,long,int)
+    static native int xnRemoveNodeFromRecording(long,long)
+    static native int xnRecord(long)
+    static native java.lang.String xnGetRecorderFormat(long)
+    static native int xnCreatePlayer(long,java.lang.String,org.openni.OutArg)
+    static native int xnSetPlayerRepeat(long,boolean)
+    static native int xnSetPlayerSource(long,int,java.lang.String)
+    static native int xnGetPlayerSource(long,org.openni.OutArg,org.openni.OutArg)
+    static native int xnPlayerReadNext(long)
+    static native int xnSeekPlayerToTimeStamp(long,long,int)
+    static native int xnSeekPlayerToFrame(long,java.lang.String,int,int)
+    static native int xnTellPlayerTimestamp(long,org.openni.OutArg)
+    static native int xnTellPlayerFrame(long,java.lang.String,org.openni.OutArg)
+    static native int xnGetPlayerNumFrames(long,java.lang.String,org.openni.OutArg)
+    static native java.lang.String xnGetPlayerSupportedFormat(long)
+    static native int xnEnumeratePlayerNodes(long,org.openni.OutArg)
+    static native boolean xnIsPlayerAtEOF(long)
+    static native void xnUnregisterFromEndOfFileReached(long,long)
+    static native int xnSetPlaybackSpeed(long,double)
+    static native double xnGetPlaybackSpeed(long)
+    static native int xnCreateScriptNode(long,java.lang.String,org.openni.OutArg)
+    static native java.lang.String xnScriptNodeGetSupportedFormat(long)
+    static native int xnLoadScriptFromFile(long,java.lang.String)
+    static native int xnLoadScriptFromString(long,java.lang.String)
+    static native int xnScriptNodeRun(long,long)
+    static native int xnResolutionGetXRes(int)
+    static native int xnResolutionGetYRes(int)
+    static native int xnResolutionGetFromXYRes(int,int)
+    static native int xnResolutionGetFromName(java.lang.String)
+    static native java.lang.String xnResolutionGetName(int)
+    static native int xnGetVersion(org.openni.OutArg)
+    static native boolean xnIsTypeGenerator(int)
+    static native boolean xnIsTypeDerivedFrom(int,int)
+    static native int xnGetBytesPerPixelForPixelFormat(int)
+org.openni.NodeCreatedEventArgs
+org.openni.NodeDestroyedEventArgs
+org.openni.NodeInfo
+org.openni.NodeInfoList
+org.openni.NodeInfoList$NodeInfoListIterator
+org.openni.NodeType:
+    142:142:public boolean isGenerator()
+    152:152:public boolean isDerivedFrom(org.openni.NodeType)
+org.openni.NodeWrapper:
+    65:65:public java.lang.String getName()
+org.openni.Observable:
+    71:77:public void deleteObserver(org.openni.IObserver)
+    86:90:public void notify(java.lang.Object)
+    protected abstract void unregisterNative(long)
+org.openni.OutputMetaData:
+    private long timestamp
+    private int frameID
+    private int dataSize
+    private boolean isNew
+    private long dataPtr
+    38:38:public long getTimestamp()
+    46:47:public void setTimestamp(long)
+    54:54:public int getFrameID()
+    62:63:public void setFrameID(int)
+    70:70:public int getDataSize()
+    78:79:public void setDataSize(int)
+    86:86:public boolean getIsNew()
+    93:94:public void setIsNew(boolean)
+    101:101:public long getDataPtr()
+    109:110:public void setDataPtr(long)
+org.openni.PixelFormat:
+    41:41:public int toNative()
+    45:45:public int getBytesPerPixel()
+    50:56:public static org.openni.PixelFormat fromNative(int)
+org.openni.Plane3D
+org.openni.Player:
+    54:59:public static org.openni.Player create(org.openni.Context,java.lang.String)
+    64:64:public java.lang.String getFormat()
+    69:71:public void setSource(org.openni.RecordMedium,java.lang.String)
+    75:79:public org.openni.RecordMedium getSourceMedium()
+    84:88:public java.lang.String getSource()
+    100:102:public void setRepeat(boolean)
+    106:108:public void readNext()
+    112:114:public void seekToTimestamp(org.openni.PlayerSeekOrigin,long)
+    118:120:public void seekToFrame(org.openni.ProductionNode,org.openni.PlayerSeekOrigin,int)
+    124:127:public long tellTimestamp()
+    132:135:public int tellFrame(org.openni.ProductionNode)
+    146:149:public int getNumberOfFrames(org.openni.ProductionNode)
+    154:157:public org.openni.NodeInfoList enumerateNodes()
+    166:166:public boolean isEOF()
+    169:169:public org.openni.IStateChangedObservable getEOFReachedEvent()
+    177:177:public double getPlaybackSpeed()
+    187:189:public void setPlaybackSpeed(double)
+org.openni.Player$1:
+    47:48:protected void unregisterNative(long)
+org.openni.PlayerSeekOrigin
+org.openni.Point3D:
+    71:74:public void setPoint(float,float,float)
+    98:98:public float getZ()
+org.openni.PoseDetectionCapability:
+    101:101:public int getNumberOfPoses()
+    106:106:public boolean isPoseSupported(java.lang.String)
+    111:117:public void getPoseStatus(int,java.lang.String,org.openni.OutArg,org.openni.OutArg,org.openni.OutArg)
+    121:124:public java.lang.String[] getAllAvailablePoses()
+    132:134:public void StartPoseDetection(java.lang.String,int)
+    141:143:public void StopPoseDetection(int)
+    146:148:public void startPoseDetection(java.lang.String,int)
+    151:153:public void stopPoseDetection(int)
+    156:158:public void stopSinglePoseDetection(int,java.lang.String)
+    166:166:public org.openni.IObservable getOutOfPoseEvent()
+    170:170:public org.openni.IObservable getPoseDetectionInProgressEvent()
+org.openni.PoseDetectionCapability$1:
+    48:49:protected void unregisterNative(long)
+    54:55:public void callback(java.lang.String,int)
+org.openni.PoseDetectionCapability$2:
+    68:69:protected void unregisterNative(long)
+    74:75:public void callback(java.lang.String,int)
+org.openni.PoseDetectionCapability$3:
+    88:89:protected void unregisterNative(long)
+    94:95:public void callback(java.lang.String,int,int)
+org.openni.PoseDetectionEventArgs
+org.openni.PoseDetectionInProgressEventArgs
+org.openni.PoseDetectionState
+org.openni.PoseDetectionStatus
+org.openni.PowerLineFrequency
+org.openni.ProductionNode:
+    56:56:public static org.openni.ProductionNode fromNative(long)
+    66:66:public org.openni.NodeInfo getInfo()
+    76:78:public void addNeededNode(org.openni.ProductionNode)
+    87:89:public void removeNeededNode(org.openni.ProductionNode)
+    98:98:public boolean isCapabilitySupported(java.lang.String)
+    109:111:public void setIntProperty(java.lang.String,long)
+    121:123:public void setRealProperty(java.lang.String,double)
+    133:135:public void setStringProperty(java.lang.String,java.lang.String)
+    147:149:public void setGeneralProperty(java.lang.String,int,long)
+    159:161:public void setGeneralProperty(java.lang.String,byte[])
+    171:174:public long getIntProperty(java.lang.String)
+    185:188:public double getRealProperty(java.lang.String)
+    199:202:public java.lang.String getStringProperty(java.lang.String)
+    215:217:public void getGeneralProperty(java.lang.String,int,long)
+    228:230:public void getGeneralProperty(java.lang.String,byte[])
+    239:242:public org.openni.LockHandle lockForChanges()
+    252:254:public void unlockForChanges(org.openni.LockHandle)
+    263:265:public void lockedNodeStartChanges(org.openni.LockHandle)
+    274:276:public void lockedNodeEndChanges(org.openni.LockHandle)
+    286:286:public org.openni.ErrorStateCapability getErrorStateCapability()
+    297:297:public org.openni.GeneralIntCapability getGeneralIntCapability(org.openni.Capability)
+org.openni.ProductionNodeDescription
+org.openni.Query:
+    39:40:public Query()
+    49:51:public void setVendor(java.lang.String)
+    55:57:public void setName(java.lang.String)
+    61:63:public void setMinVersion(org.openni.Version)
+    67:69:public void setMaxVersion(org.openni.Version)
+    73:75:public void addSupportedCapability(org.openni.Capability)
+    79:81:public void addSupportedMapOutputMode(org.openni.MapOutputMode)
+    85:87:public void addSupportedMinUserPositions(int)
+    91:93:public void setExistingNodeOnly(boolean)
+    97:99:public void setNonExistingNodeOnly(boolean)
+    103:105:public void addNeededNode(org.openni.ProductionNode)
+    109:111:public void setCreationInfo(java.lang.String)
+    121:124:private static long allocate()
+org.openni.RecordMedium
+org.openni.Recorder:
+    44:49:public static org.openni.Recorder create(org.openni.Context,java.lang.String)
+    54:54:public java.lang.String getFormat()
+    59:61:public void setDestination(org.openni.RecordMedium,java.lang.String)
+    65:69:public org.openni.RecordMedium getDestinationMedium()
+    74:78:public java.lang.String getDestination()
+    88:90:public void addNodeToRecording(org.openni.ProductionNode,org.openni.CodecID)
+    94:95:public void addNodeToRecording(org.openni.ProductionNode)
+    99:101:public void removeNodeToRecording(org.openni.ProductionNode)
+    109:111:public void Record()
+org.openni.Resolution
+org.openni.SceneAnalyzer:
+    private org.openni.SceneMap currSceneMap
+    private int currSceneMapFrameID
+    40:47:public static org.openni.SceneAnalyzer create(org.openni.Context,org.openni.Query,org.openni.EnumerationErrors)
+    52:52:public static org.openni.SceneAnalyzer create(org.openni.Context,org.openni.Query)
+    57:57:public static org.openni.SceneAnalyzer create(org.openni.Context)
+    62:72:public org.openni.SceneMap getSceneMap()
+    76:77:public void getMetaData(org.openni.SceneMetaData)
+    81:83:public org.openni.SceneMetaData getMetaData()
+    88:93:public org.openni.Plane3D getFloor()
+org.openni.SceneMap:
+    48:49:SceneMap(long,int,int)
+org.openni.ScriptNode:
+    50:55:public static org.openni.ScriptNode create(org.openni.Context,java.lang.String)
+    64:64:public java.lang.String getSupportedFormat()
+    74:76:public void loadScriptFromFile(java.lang.String)
+    85:87:public void loadScriptFromString(java.lang.String)
+    96:98:public void Run(org.openni.EnumerationErrors)
+org.openni.ShortMap:
+    private static final int BYTES_PER_PIXEL
+    52:53:ShortMap(long,int,int)
+    63:63:public short readPixel(int,int)
+org.openni.SkeletonCapability:
+    115:115:public boolean isJointAvailable(org.openni.SkeletonJoint)
+    119:119:public boolean isProfileAvailable(org.openni.SkeletonProfile)
+    128:130:public void setJointActive(org.openni.SkeletonJoint,boolean)
+    133:133:public boolean isJointActive(org.openni.SkeletonJoint)
+    137:145:public org.openni.SkeletonJoint[] enumerateActiveJoints()
+    150:153:public org.openni.SkeletonJointTransformation getSkeletonJoint(int,org.openni.SkeletonJoint)
+    164:167:public org.openni.SkeletonJointOrientation getSkeletonJointOrientation(int,org.openni.SkeletonJoint)
+    176:176:public boolean isSkeletonCalibrated(int)
+    180:180:public boolean isSkeletonCalibrating(int)
+    185:187:public void requestSkeletonCalibration(int,boolean)
+    190:191:public void requestSkeletonCalibration(int)
+    194:196:public void abortSkeletonCalibration(int)
+    200:202:public void saveSkeletonCalibrationDataToFile(int,java.lang.String)
+    205:207:public void loadSkeletonCalibrationDatadFromFile(int,java.lang.String)
+    211:213:public void saveSkeletonCalibrationData(int,int)
+    216:218:public void loadSkeletonCalibrationData(int,int)
+    221:223:public void clearSkeletonCalibrationData(int)
+    226:226:public boolean isSkeletonCalibrationData(int)
+    232:234:public void startTracking(int)
+    237:239:public void stopTracking(int)
+    242:244:public void reset(int)
+    249:249:public boolean needPoseForCalibration()
+    262:264:public void setSmoothing(float)
+    269:269:public org.openni.IStateChangedObservable getJointConfigurationChangeEvent()
+    273:273:public org.openni.IObservable getCalibrationStartEvent()
+    277:277:public org.openni.IObservable getCalibrationInProgressEvent()
+org.openni.SkeletonCapability$1:
+    47:48:protected void unregisterNative(long)
+org.openni.SkeletonCapability$2:
+    61:62:protected void unregisterNative(long)
+    67:68:public void callback(int)
+org.openni.SkeletonCapability$3:
+    81:82:protected void unregisterNative(long)
+    87:88:public void callback(int,int)
+org.openni.SkeletonCapability$4:
+    101:102:protected void unregisterNative(long)
+    107:108:public void callback(int,int)
+org.openni.SkeletonJoint:
+    64:70:public static org.openni.SkeletonJoint fromNative(int)
+org.openni.SkeletonJointOrientation
+org.openni.SkeletonJointPosition:
+    private float confidence
+    38:42:public SkeletonJointPosition(org.openni.Point3D,float)
+    59:59:public float getConfidence()
+org.openni.SkeletonJointTransformation
+org.openni.SkeletonPoseProcessingMode
+org.openni.SkeletonProfile:
+    55:61:public static org.openni.SkeletonProfile fromNative(int)
+org.openni.StateChangedObservable:
+    46:47:private void callback()
+org.openni.StatusException:
+    private static final long serialVersionUID
+org.openni.UserEventArgs
+org.openni.UserGenerator:
+    131:131:public static org.openni.UserGenerator create(org.openni.Context,org.openni.Query)
+    141:141:public int getNumberOfUsers()
+    159:162:public org.openni.Point3D getUserCoM(int)
+    193:193:public org.openni.IObservable getLostUserEvent()
+    197:197:public org.openni.IObservable getUserExitEvent()
+    201:201:public org.openni.IObservable getUserReenterEvent()
+org.openni.UserGenerator$1:
+    46:47:protected void unregisterNative(long)
+    52:53:public void callback(int)
+org.openni.UserGenerator$2:
+    66:67:protected void unregisterNative(long)
+    72:73:public void callback(int)
+org.openni.UserGenerator$3:
+    86:87:protected void unregisterNative(long)
+    92:93:public void callback(int)
+org.openni.UserGenerator$4:
+    106:107:protected void unregisterNative(long)
+    112:113:public void callback(int)
+org.openni.UserPositionCapability
+org.openni.UserPositionCapability$1
+org.openni.Version
+org.openni.WaveOutputMode
+org.openni.WrapperUtils:
+    31:31:public WrapperUtils()
+    57:68:public static void checkEnumeration(int,org.openni.EnumerationErrors)
+org.openni.XYCoordinates
+org.openni.android.OpenNIHelper:
+    private static final java.lang.String OPENNI_ASSETS_DIR
+org.openni.android.OpenNIView
+org.openni.android.OpenNIView$Renderer
